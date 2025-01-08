@@ -1,0 +1,51 @@
+* {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+}
+
+body {
+    background-color: skyblue;
+    font-size: 135%;
+}
+
+img {
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    color: whitesmoke;
+    opacity: 70%;
+}
+
+input,
+button {
+    background-color: steelblue;
+    width: 162px;
+    border: 1px, solid, paleturquoise;
+    border-radius: 3px;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    transition: all 0.3s ease-out;
+    background: palegoldenrod;
+    color: sandybrown;
+}
+
+#weather-info {
+    background: steelblue;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin: 0 auto;
+}
+
+div > p {
+    font-weight: 600;
+    opacity: 80%;
+}
