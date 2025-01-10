@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Web App sobre el tiempo</title>
-        <link rel="stylesheet" href="index.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mi Clima</title>
+        <link rel="stylesheet" href="index.css" />
+        <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/024/825/193/non_2x/3d-weather-icon-day-with-rain-free-png.png" />
     </head>
     <body>
+        <h1>¿QUÉ TIEMPO ES HOY?</h1>
         <div id="weather-container">
-            <h1>¿QUÉ TIEMPO ES HOY?</h1>
             <img src="https://static.vecteezy.com/system/resources/previews/024/825/193/non_2x/3d-weather-icon-day-with-rain-free-png.png" alt="Nube en 3D">
             <div id="input">
                 <input type="text" name="input-data" id="input-data" placeholder="Inserte Ciudad / País"/>
                 <button type="submit" id="btn">Enviar</button>
+                <p id="infoWeather">Información <span style="color: darkred;">NO</span> encontrada, deberás ingresar una ciudad para averiguarlo.</p>
             </div>
             <div id="weather-info">
-                <p id="city">Ciudad: Información NO encontrada </p>
-                <p id="temp">Temperatura: Información NO encontrada </p>
-                <p id="desc">Descripción: Información NO encontrada </p>
+                <p id="infoWeather1" class="info-weather"></p>
+                <p id="infoWeather2" class="info-weather"></p>
             </div>
         </div>
         <script src="index.js"></script>
