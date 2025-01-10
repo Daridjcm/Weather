@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 * {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     color: whitesmoke;
     text-align: center;
+}
+
+h1 {
+    font-family: 'Rubik', serif;
+    font-size: 80px;
 }
 
 body {
@@ -16,6 +22,7 @@ img {
 }
 
 input::placeholder {
+    transition: all 0.3s ease;
     color: whitesmoke;
     opacity: 70%;
 }
@@ -24,28 +31,85 @@ input,
 button {
     background-color: steelblue;
     width: 162px;
-    border: 1px, solid, paleturquoise;
+    border: 1px solid paleturquoise;
     border-radius: 3px;
     padding: 10px 20px 10px 20px;
-    margin-bottom: 20px;
+    transition: all 0.5s ease-in-out;
 }
 
 button:hover {
-    transition: all 0.3s ease-out;
+    transition: all 0.3s ease-in;
     background: palegoldenrod;
     color: sandybrown;
+    width: 100px;
+}
+
+#weather-container {
+    font-family: 'Jaldi', serif;
 }
 
 #weather-info {
-    background: steelblue;
-    width: 350px;
+    display: none;
+    justify-content: space-between;
+    width: 600px;
     border-radius: 5px;
-    box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.3);
     padding: 10px;
     margin: 0 auto;
 }
 
+.info-weather {
+    margin: 0 10px;
+    width: 250px;
+    box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+#infoWeather1 {
+    background-color: #ffe4e1;
+    color: #8b0000;
+}
+
+#infoWeather2 {
+    background-color: #e6f7ff;
+    color: #004085;
+}
+
+/* Blur effect */
+.info-weather.blurred {
+    filter: blur(5px);
+}
+
+/* Scale effect on hover */
+.info-weather:hover {
+    transform: scale(1.05);
+    transform: translateY(-20px);
+    transform: rotate(-10deg);
+}
+
+#infoWeather1.active, #infoWeather2.active {
+    display: block;
+}
+
+/* Estilos para pantallas pequeñas */
 div > p {
     font-weight: 600;
     opacity: 80%;
+}
+
+@media (max-width: 600px) {
+  #weather-info {
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    padding: 10px;
+  }
+  
+  #infoWeather1,
+  #infoWeather2 {
+      width: 90%; 
+      text-align: start;
+  }
 }
