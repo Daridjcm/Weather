@@ -52,6 +52,11 @@ repo/
 - **toFixed 🧮:** Para redondear la temperatura a dos decimales antes de mostrarla.
 - **DOM ✏️:** Manipulación directa para actualizar el contenido dinámicamente.
 
+## Futuras implementaciones
+### Mejoras en la experiencia del usuario
+- Actualizar los campos de entrada, en este caso utiliza dos campos para el país y dependiendo del país, arroje todas las ciudades en el segundo campo.
+- Mejorar los errores de los endpoints, al meter una ciudad incompleta, la busqueda no se realiza o en pocas palabras, aparece vacío o no se actualiza.
+
 ## Cómo usar el repositorio
 1. Clonar el repositorio o descargar los archivos. 📥
 2. Abrir el archivo `index.html` en un navegador web. 🌐
