@@ -56,6 +56,7 @@ btn.addEventListener('click', function () {
     }
 
   } else {
+    infoGeneral.innerHTML = `Información <span style="color: darkred;">NO</span> encontrada, deberás ingresar una ciudad para averiguarlo.`
     alert('Por favor, ingresa una ciudad válida.');
   }
 });
